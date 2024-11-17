@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #061115;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.main {
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+}
+
+aside {
+  width: 15%;
+  max-width: 220px;
+  min-width: 105px;
+}
+
+.logo {
+  width: 245px;
+}
+
+.logo > img {
+  width: 100%;
+}
+
+.menu-item {
+  min-height: 650px;
+  background: linear-gradient(359.67deg, #061115 7.11%, #0f765d 97.91%);
+  border-radius: 0 50px 0 0;
+  padding: 80px 30px 0;
+  font-family: "Baloo 2";
+}
+
+.menu-item > ul > li.active::after {
+  content: url("assets/up-right-arrow.svg");
+  margin-left: 10px;
+}
+
+.menu-item > ul > li {
+  margin-bottom: 30px;
+}
+
+.menu-item > ul > li > a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #63ffe0;
+}
+
+.main-content {
+  padding: 45px 20px;
+  width: 85%;
+  max-width: 1200px;
+}
+
+.header-content {
+  width: calc(100% - 250px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-content > p {
+  text-transform: uppercase;
+  color: #94ffca80;
+  font: 22px / 35px "Baloo 2", sans-serif;
+}
+
+.header-content > button {
+  color: #63ffe0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font: 500 24px / 38px "Baloo 2", sans-serif;
+
+  a {
+    text-decoration: none;
+    color: #63ffe0;
+  }
+}
+
+.wallet-info {
+  margin: 30px 0;
+}
+
+.wallet-info .wallet-title {
+  font: 500 20px / 35px "Baloo 2", sans-serif;
+  color: #46696a;
+  margin-bottom: 15px;
+}
+
+.wallet {
+  display: flex;
+  border: 1px solid #1a3031;
+  border-radius: 15px;
+  padding: 15px 60px;
+  justify-content: space-between;
+}
+
+.wallet > li {
+  display: flex;
+  flex-direction: column;
+}
+
+.wallet > li span:first-child {
+  font: 900 28px / 39px chola-boba-bold;
+  color: #94ffca;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.wallet > li span:first-child::after {
+  content: url("assets/Vector5.svg");
+  position: absolute;
+  top: 36%;
+  left: -18%;
+}
+
+.wallet > li span:last-child {
+  font: 500 22px / 35px "Baloo 2", sans-serif;
+  color: #1a9079;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.cards-wrapper .card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  padding: 1px;
+  background: linear-gradient(
+    92.03deg,
+    rgba(65, 239, 152, 0.75) -5.51%,
+    rgba(6, 17, 21, 0.75) 49.11%,
+    rgba(85, 249, 167, 0.75) 102.44%
+  );
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.cards-wrapper .card {
+  min-width: 360px;
+  position: relative;
+  border-radius: 30px;
+  background-color: #00221b;
+  padding: 30px 35px 48px;
+}
+
+.card .card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+}
+
+.card .card-title > span {
+  font: 600 36px / 57px "Baloo 2", sans-serif;
+  color: #fff;
+}
+
+.card .title-border {
+  width: 100%;
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    90deg,
+    rgba(6, 17, 21, 0.75) 2.69%,
+    rgba(85, 249, 167, 0.75) 51.7%,
+    rgba(6, 17, 21, 0.75) 96.81%
+  );
+  border-image-slice: 1;
+  margin: 30px 0;
+}
+
+.card-content > li {
+  display: flex;
+  justify-content: space-between;
+  font-family: "baloo 2", sans-serif;
+  margin-bottom: 10px;
+}
+
+.card-content > li > span:first-child {
+  font: 400 20px / 32px "Baloo 2", sans-serif;
+  color: #94ffca;
+}
+
+.card-content > li > span:last-child {
+  font: 800 20px / 32px "Baloo 2", sans-serif;
+  color: #94ffca;
+}
+
+.card .actions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.card .actions > button {
+  background: linear-gradient(90deg, #41ef98 0%, #56f9a8 100%);
+  border-radius: 30px;
+  padding: 2px 20px;
+  font: 900 28px / 39px chola-boba-bold;
+  color: #061115;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.stacking-info {
+  margin-top: 130px;
+  margin-bottom: 80px;
+}
+
+.stacking-info .top-image {
+  width: 50%;
+  margin: auto;
+  margin-bottom: -44px;
+}
+
+.stacking-info .top-image > img {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+
+.stacking-info-content {
+  border-top: 22px solid;
+  border-bottom: 22px solid;
+  border-image-source: linear-gradient(
+    96.7deg,
+    #05120d -11.91%,
+    #053c1c 41.36%,
+    #05b774 85.49%,
+    #2cebca 96.71%
+  );
+  border-image-slice: 1;
+}
+
+.stacking-info-content > h2 {
+  font: 900 100px / 140px chola-boba-bold;
+  color: #54f8a6;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.stacking-info-content > h2 > span:not(:last-child) {
+  margin-right: 100px;
+}
+
+.stacking-info-content > p {
+  font: 400 24px / 40px "Baloo 2", sans-serif;
+  color: #1a9079;
+  padding: 30px 200px;
+  text-align: center;
+}
+
+.stacking-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 22px;
+}
+
+.stacking-options .title {
+  display: flex;
+  flex-direction: column;
+  font: 900 35px / 49px chola-boba-bold;
+  color: #54f8a6;
+}
+
+.stacking-options .content {
+  border: none;
+  border-left: 1px solid;
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(6, 17, 21, 0) 0%,
+    #54f8a6 50.5%,
+    rgba(6, 17, 21, 0) 100%
+  );
+  border-image-slice: 1;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  background-color: #050c0e;
+}
+
+.stacking-options .content > li {
+  display: flex;
+  width: 50%;
+  padding: 30px 20px;
+  align-items: center;
+  font: 400 24px / 40px "Baloo 2", sans-serif;
+  color: #94ffca;
+}
+
+.stacking-options .content > li > span {
+  font: 900 50px / 70px chola-boba-bold;
+  color: #1a9079;
+  margin-right: 20px;
+}
+
+/* Extra small devices (Portrait phones, up to 575px) */
+@media (max-width: 575px) {
+  .logo {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .main {
+    flex-direction: row;
+  }
+
+  .main-content {
+    padding: 12px 10px 0;
+  }
+
+  .wallet-info {
+    margin-top: 0;
+  }
+
+  .menu-item {
+    padding: 80px 10px 0;
+  }
+
+  .menu-item > ul > li > a {
+    font: 500 18px / 24.8px "Baloo 2", sans-serif;
+  }
+
+  .header-content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header-content > p {
+    font: 400 18px / 28.8px "Baloo 2", sans-serif;
+    text-align: center;
+    padding: 0 25px;
+  }
+
+  .cards-wrapper .card {
+    min-width: 300px;
+  }
+
+  .card .card-title > span {
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+  .card-content > li > span:first-child,
+  .card-content > li > span:last-child {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wallet > li span:first-child {
+    margin-bottom: 0;
+    line-height: 25px;
+  }
+  .stacking-info .top-image {
+    margin-bottom: -14px;
+  }
+  .stacking-info-content > h2 > span:not(:last-child) {
+    margin-right: 20px;
+  }
+  .stacking-info-content > h2 {
+    font: 900 25px / 50px chola-boba-bold;
+  }
+  .stacking-info-content > p {
+    font: 400 18px / 25px "Baloo 2", sans-serif;
+    padding: 15px 0;
+  }
+  .stacking-options {
+    flex-wrap: wrap;
+    padding-left: 8px;
+    justify-content: center;
+  }
+
+  .stacking-options .content {
+    flex-direction: row;
+    width: 100%;
+  }
+  .stacking-options .content > li {
+    width: 100%;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 30px 5px 30px 20px;
+  }
+  .stacking-options .content > li > span {
+    font: 900 30px / 20px chola-boba-bold;
+    margin-right: 13px;
+  }
+}
+
+/* Small devices (Landscape phones, 576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+/* Medium devices (Tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu-item {
+    padding: 0;
+  }
+}
+
+/* Large devices (Desktops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Extra large devices (Large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

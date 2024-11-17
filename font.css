@@ -1,0 +1,12 @@
+@font-face {
+  font-family: chola-boba;
+  src: url("assets/chola-boba/chola-boba-chola-boba-regular-400.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: chola-boba-bold;
+  font-weight: bold;
+  src: url("assets/chola-boba/chola-boba-chola-boba-bold-800.otf")
+    format("opentype");
+}

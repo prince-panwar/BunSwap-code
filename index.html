@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Cuprum:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>swap</title>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-items">
+      <div class="nav-title">
+        <h2>Support</h2>
+      </div>
+      <div class="title">
+        <h1>Bun <span class="highlight-text">swap</span></h1>
+      </div>
+      <div class="nav-title">
+        <a href="/dashboard.html">
+          <h2>Dashboard</h2>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="card-group">
+      <div class="png rotate">
+        <img src="./assets/bun-2.png" alt="">
+      </div>
+      <div class="card">
+        <div class="swap-form">
+          <div class="input-group" id="fromCurrencyGroup">
+            <input class="val" type="number" value="0.02"></input>
+            <div class="inp-text">
+              <p>From</p>
+              <h3>Ethereum</h3>
+            </div>
+
+            <div class="custom-dropdown">
+              <div class="dropdown-selected" onclick="toggleDropdown(this) ">
+                <img src="./assets/currency_logo/Eth.png" alt="ETH Logo" class="dropdown-icon" />
+                <span>ETH</span>
+                <span class="dropdown-arrow">
+                  <img src="/assets/Vector.png" alt="">
+                </span>
+              </div>
+              <ul class="dropdown-options">
+               
+              </ul>
+            </div>
+          </div>
+          <div class="exng">
+            <img class="vector vector-1" src="./assets/Change.png" alt="">
+
+          </div>
+          <div class="input-group" id="toCurrencyGroup">
+            <input class="val" type="number" value="0.02"></input>
+            <div class="inp-text">
+              <p>To</p>
+              <h3>Solana</h3>
+            </div>
+            <div class="custom-dropdown">
+              <div class="dropdown-selected"  onclick="toggleDropdown(this)">
+                <img src="./assets/currency_logo/Eth.png" alt="ETH Logo" class="dropdown-icon" />
+                <span>ETH</span>
+                <span class="dropdown-arrow">
+                  <img src="/assets/Vector.png" alt="">
+                </span>
+              </div>
+              <ul class="dropdown-options">
+               
+              </ul>
+            </div>
+          </div>
+          <div class="input-group">
+            <input class=" input-text " type="text" placeholder="Receiving Wallet (SOL) Address">
+          </div>
+         <a>
+            <button class="submit-btn">swap</button>
+          </a>
+        </div>
+        <div class="error-message" id="errorMessage" style="display: none; color: red; font-size: 0.9em; margin-top: 10px;"></div>
+      <div class="transaction-info">
+        <p><strong>Deposit Address:</strong> <span id="depositAddress">N/A</span></p>
+        <p><strong>Transaction Status:</strong> <span id="transactionStatus">N/A</span></p>
+      </div>
+      
+      <div id="errorMessage"></div>
+      </div>
+      
+      <div class="png">
+        <img src="./assets/bun-2.png" alt="">
+      </div>
+    </div>
+  </div>
+  
+  <div class="freature-cont">
+    <div class="line-sec">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+    </div>
+    <div class="f-content">
+      <div class="heading">
+        <h1>FEATURES</h1>
+      </div>
+      <div class="list-sec">
+        <div class="list">
+          <div class="num">01</div>
+          <div class="text">
+            <h1>Sample</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, maiores.</p>
+          </div>
+        </div>
+        <div class="list">
+          <div class="num">02</div>
+          <div class="text">
+            <h1>Sample</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, maiores.</p>
+          </div>
+        </div>
+        <div class="list">
+          <div class="num">03</div>
+          <div class="text">
+            <h1>Sample</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, maiores.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="/index.js"></script>
+</body>
+
+</html>
