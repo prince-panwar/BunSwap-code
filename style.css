@@ -260,7 +260,7 @@
   position: absolute;
   top: 55px;
   right: 0px;
-  width: 100%;
+  width: 150px;
   background-color: #00221b;
   border-radius: 10px;
   margin: 5px 0 0;
@@ -272,8 +272,16 @@
   transform: translateY(-10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
   max-height: 200px; /* Adjust height as needed */
-  overflow-y: auto
+  overflow-y: auto; /* Enable vertical scrolling */
+  scrollbar-width: none; /* Firefox: Hide scrollbar */
 }
+
+/* For Webkit-based browsers (Chrome, Safari, Edge) */
+.dropdown-options::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 
 /* Display dropdown options on click */
 .custom-dropdown.open .dropdown-options {
